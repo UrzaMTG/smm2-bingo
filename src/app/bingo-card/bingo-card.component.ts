@@ -83,7 +83,7 @@ export class BingoCardComponent implements OnInit {
 
   toggleCell(condition: Condition, event: any): void
   {
-    var elemId = event.explicitOriginalTarget.id;
+    var elemId = event.currentTarget.id;
 
     if (condition.toggled)
     {
