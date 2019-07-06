@@ -1,5 +1,14 @@
 /* Add application styles & imports to this file! */
-body {
+* {
   background-color: black;
   color: white;
+  font-family: 'Trebuchet MS';
+}
+
+.top-bar
+{
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

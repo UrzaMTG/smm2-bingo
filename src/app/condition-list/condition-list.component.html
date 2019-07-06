@@ -1,0 +1,7 @@
+<h1> Conditions </h1>
+
+<div *ngFor="let condition of conditions | async">
+  <p>
+    <b>{{ condition.text }}:</b> {{ condition.description }}
+  </p>
+</div>

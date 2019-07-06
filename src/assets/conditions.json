@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Laughing Kaizo Block",
+    "description": "A hidden question block with a Laughter or Guffaw SFX inside, usually blocking a jump or creating a soft-lock."
+  },
+  {
+    "text": "3+ Bosses",
+    "description": "A level which has at least three Bowser, Bowser Jr., Meowser, Boom Boom, or Pom Pom enemies in it."
+  },
+  {
+    "text": "Blind Jump",
+    "description": "A jump in the level where the player is unable to see where or if a safe landing area exists until after Mario jumps."
+  },
+  {
+    "text": "Forced Yoshi Murder",
+    "description": "A level which requires the player to kill Yoshi in order to advance."
+  },
+  {
+    "text": "No Jump Level, Cape/Freefall",
+    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump."
+  },
+  {
+    "text": "No Jump Level, Platform Manipulation",
+    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position."
+  },
+  {
+    "text": "Boo Ring in Question Block",
+    "description": "A block (question, note, brick, etc.) that, when hit, generates a boo ring."
+  },
+  {
+    "text": "Dev Route",
+    "description": "A path (door, pipe, or otherwise) not intended to be found by the player, which trivializes the level."
+  },
+  {
+    "text": "Bob-omb Excavation",
+    "description": "A level requiring the player to open a path by exploding three or more bob-ombs to destroy blocks."
+  },
+  {
+    "text": "Break Scroll Stops",
+    "description": "A level requiring the player to advance by destroying blocks that otherwise create a scroll stop three or more times."
+  },
+  {
+    "text": "Misleading Coin Path",
+    "description": "A coin path, which, if followed by the player, results in death or other reversal of level progress."
+  },
+  {
+    "text": "Instant Death Door",
+    "description": "A door which, when taken, immediately leads to Mario's death. The player must actually die from such a door to count."
+  },
+  {
+    "text": "Pick-a-Pipe",
+    "description": "A point in the level where the player must choose between multiple identical options (doors, pipes, etc.) without being able to tell which choice is correct."
+  },
+  {
+    "text": "Puzzle Level",
+    "description": "A genuine puzzle level. Mazes do not count as puzzles."
+  },
+  {
+    "text": "Vertical Rising Lava/Poison Level",
+    "description": "A level where the sub-area is vertical, and the player is racing the lava/poison/other danger that is rising from the bottom of the screen."
+  },
+  {
+    "text": "Fire Yoshi",
+    "description": "A level that requires using a red Yoshi to beat the level."
+  },
+  {
+    "text": "Collect Coins Clear Condition",
+    "description": "A level that requires the player to collect all of the coins on the level to open the exit, or that requires the player to collect a minimum number of coins to open the exit."
+  },
+  {
+    "text": "Good Items Are Bad",
+    "description": "A level where getting an item that is normally considered \"good\" (such as a power-up, star, or P-switch) causes Mario to die or the level to be otherwise unbeatable. Level must contain multiple copies of this item."
+  },
+  {
+    "text": "Checkpoint Troll",
+    "description": "A level where, if the wrong path is taken, the player is forced to hit a checkpoint for a loss of progress."
+  },
+  {
+    "text": "Mostly Covered Exit Flag / Axe / Etc.",
+    "description": "A level where the exit is mostly covered with blocks or enemies, leaving only a small section exposed."
+  },
+  {
+    "text": "Soft Lock",
+    "description": "The player gets in a position where they are unable to continue progress in the level, due to getting Mario stuck, losing a required powerup, etc. This counts even if suicide is an option."
+  },
+  {
+    "text": "Time Limit < 100 seconds",
+    "description": "A level which starts with fewer than 100 seconds on the timer."
+  },
+  {
+    "text": "Wall Jump Level",
+    "description": "A level heavily featuring the wall jump mechanic."
+  },
+  {
+    "text": "On/Off Switch Level",
+    "description": "A level heavily featuring the On/Off switch for blocks, conveyors, tracks, etc."
+  },
+  {
+    "text": "Unfinished Pipes",
+    "description": "Pipes in a level where the back end is not attached to anything."
+  }
+]
