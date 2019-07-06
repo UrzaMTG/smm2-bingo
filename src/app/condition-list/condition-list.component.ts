@@ -13,7 +13,7 @@ export class ConditionListComponent implements OnInit {
   constructor(
     private conditionsService: ConditionsService
   ) { 
-    this.conditions = this.conditionsService.getConditions();
+    this.conditions = this.conditionsService.conditionsList;
   }
 
   ngOnInit() {
