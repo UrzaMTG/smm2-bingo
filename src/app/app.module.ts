@@ -9,7 +9,6 @@ import { ConditionListComponent } from './condition-list/condition-list.componen
 import { ConditionsService } from './conditions.service';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { BingoCardComponent } from './bingo-card/bingo-card.component';
-import { BingoSettingsComponent } from './bingo-settings/bingo-settings.component';
 
 @NgModule({
   imports: [
@@ -21,7 +20,7 @@ import { BingoSettingsComponent } from './bingo-settings/bingo-settings.componen
       { path: 'conditions', component: ConditionListComponent },
     ])
   ],
-  declarations: [AppComponent, ConditionListComponent, NavigationBarComponent, BingoCardComponent, BingoSettingsComponent],
+  declarations: [AppComponent, ConditionListComponent, NavigationBarComponent, BingoCardComponent],
   bootstrap: [AppComponent],
   providers: [ConditionsService]
 })
