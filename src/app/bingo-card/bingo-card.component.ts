@@ -25,7 +25,7 @@ export class BingoCardComponent implements OnInit {
   ngOnInit() {
     var selectedIDs: number[] = [];
 
-    while (this.row1.length < 5)
+    //while (this.row1.length < 5)
     {
       var randCondition: Condition;
       randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
