@@ -9,11 +9,10 @@ import { Condition } from '../condition';
 })
 export class BingoSpotComponent implements OnInit {
   @Input() condition: Condition;
-  private isToggled: boolean;
+  public IsToggled: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

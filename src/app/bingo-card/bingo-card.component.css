@@ -1,0 +1,13 @@
+.bingo-spot {
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.toggled {
+  background-color: white;
+  color: black;
+}

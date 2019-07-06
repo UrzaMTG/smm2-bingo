@@ -1,129 +1,161 @@
 [
   {
+    "id": 1,
     "text": "Laughing Kaizo Block",
     "description": "A hidden question block with a Laughter or Guffaw SFX inside, usually blocking a jump or creating a soft-lock."
   },
   {
+    "id": 2,
     "text": "3+ Bosses",
     "description": "A level which has at least three Bowser, Bowser Jr., Meowser, Boom Boom, or Pom Pom enemies in it."
   },
   {
+    "id": 3,
     "text": "Blind Jump",
     "description": "A jump in the level where the player is unable to see where or if a safe landing area exists until after Mario jumps."
   },
   {
+    "id": 4,
     "text": "Forced Yoshi Murder",
     "description": "A level which requires the player to kill Yoshi in order to advance."
   },
   {
+    "id": 5,
     "text": "No Jump Level, Cape/Freefall",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump."
   },
   {
+    "id": 6,
     "text": "No Jump Level, Platform Manipulation",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position."
   },
   {
+    "id": 7,
     "text": "Boo Ring in Question Block",
     "description": "A block (question, note, brick, etc.) that, when hit, generates a boo ring."
   },
   {
+    "id": 8,
     "text": "Dev Route",
     "description": "A path (door, pipe, or otherwise) not intended to be found by the player, which trivializes the level."
   },
   {
+    "id": 9,
     "text": "Bob-omb Excavation",
     "description": "A level requiring the player to open a path by exploding three or more bob-ombs to destroy blocks."
   },
   {
+    "id": 10,
     "text": "Break Scroll Stops",
     "description": "A level requiring the player to advance by destroying blocks that otherwise create a scroll stop three or more times."
   },
   {
+    "id": 11,
     "text": "Misleading Coin Path",
     "description": "A coin path, which, if followed by the player, results in death or other reversal of level progress."
   },
   {
+    "id": 12,
     "text": "Instant Death Door",
     "description": "A door which, when taken, immediately leads to Mario's death. The player must actually die from such a door to count."
   },
   {
+    "id": 13,
     "text": "Pick-a-Pipe",
     "description": "A point in the level where the player must choose between multiple identical options (doors, pipes, etc.) without being able to tell which choice is correct."
   },
   {
-    "text": "Puzzle Level",
-    "description": "A genuine puzzle level. Mazes do not count as puzzles."
-  },
-  {
+    "id": 14,
     "text": "Vertical Rising Lava/Poison Level",
     "description": "A level where the sub-area is vertical, and the player is racing the lava/poison/other danger that is rising from the bottom of the screen."
   },
   {
+    "id": 15,
+    "text": "Puzzle Level",
+    "description": "A genuine puzzle level. Mazes do not count as puzzles."
+  },
+  {
+    "id": 16,
     "text": "Fire Yoshi",
     "description": "A level that requires using a red Yoshi to beat the level."
   },
   {
+    "id": 17,
     "text": "Collect Coins Clear Condition",
     "description": "A level that requires the player to collect all of the coins on the level to open the exit, or that requires the player to collect a minimum number of coins to open the exit."
   },
   {
+    "id": 18,
     "text": "Good Items Are Bad",
     "description": "A level where getting an item that is normally considered \"good\" (such as a power-up, star, or P-switch) causes Mario to die or the level to be otherwise unbeatable. Level must contain multiple copies of this item."
   },
   {
+    "id": 19,
     "text": "Checkpoint Troll",
     "description": "A level where, if the wrong path is taken, the player is forced to hit a checkpoint for a loss of progress."
   },
   {
+    "id": 20,
     "text": "Mostly Covered Exit Flag / Axe / Etc.",
     "description": "A level where the exit is mostly covered with blocks or enemies, leaving only a small section exposed."
   },
   {
+    "id": 21,
     "text": "Soft Lock",
     "description": "The player gets in a position where they are unable to continue progress in the level, due to getting Mario stuck, losing a required powerup, etc. This counts even if suicide is an option."
   },
   {
+    "id": 22,
     "text": "Time Limit < 100 seconds",
     "description": "A level which starts with fewer than 100 seconds on the timer."
   },
   {
+    "id": 23,
     "text": "Wall Jump Level",
     "description": "A level heavily featuring the wall jump mechanic."
   },
   {
+    "id": 24,
     "text": "On/Off Switch Level",
     "description": "A level heavily featuring the On/Off switch for blocks, conveyors, tracks, etc."
   },
   {
+    "id": 25,
     "text": "Unfinished Pipes",
     "description": "Pipes in a level where the back end is not attached to anything."
   },
   {
+    "id": 26,
     "text": "Jumps Counted",
     "description": "A level that kills you if you jump too many times."
   },
   {
+    "id": 27,
     "text": "Required Hidden Block",
     "description": "A hidden block containing an item required to complete the level. Does not count if the block is overly hinted at (for example multiple arrows pointing at it)."
   },
   {
+    "id": 28,
     "text": "Spin to Win",
     "description": "A level requiring Mario to spin jump off at least three enemies to complete."
   },
   {
+    "id": 29,
     "text": "\"WHY ARE YOU LIKE THIS?\"",
     "description": "The player yells at the level designer, usually because of unfair item/enemy placement (see the Intermediate tutorial \"Treating the Player Fairly\")."
   },
   {
+    "id": 30,
     "text": "Misleading Arrows",
     "description": "An arrow, which, if followed by the player, results in death or other reversal of level progress."
   },
   {
+    "id": 31,
     "text": "Instant Non-Thwomp Death",
     "description": "Mario will be killed by a hazard other than a thwomp at the start of the level unless he moves out of the way as soon as the level starts."
   },
   {
+    "id": 32,
     "text": "Instant Thwomp Death",
     "description": "A thwomp which will kill Mario at the start of the level unless he moves out of the way as soon as the level starts."
   }

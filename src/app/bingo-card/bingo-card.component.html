@@ -1,3 +1,29 @@
-<h1>
-Coming soon.
-</h1>
+<h1>SMM2 Bingo</h1>
+
+<table id="bingoTable">
+  <tr>
+    <td class="bingo-spot" *ngFor="let condition of row1; index as id">
+      <app-bingo-spot [condition]="condition"></app-bingo-spot>
+    </td>
+  </tr>
+  <tr>
+    <td class="bingo-spot" *ngFor="let condition of row2; index as id">
+      <app-bingo-spot [condition]="condition"></app-bingo-spot>
+    </td>
+  </tr>
+  <tr>
+    <td class="bingo-spot" *ngFor="let condition of row3; index as id">
+      <app-bingo-spot [condition]="condition"></app-bingo-spot>
+    </td>
+  </tr>
+  <tr>
+    <td class="bingo-spot" *ngFor="let condition of row4; index as id">
+      <app-bingo-spot [condition]="condition"></app-bingo-spot>
+    </td>
+  </tr>
+  <tr>
+    <td class="bingo-spot" *ngFor="let condition of row5; index as id">
+      <app-bingo-spot [condition]="condition"></app-bingo-spot>
+    </td>
+  </tr>
+</table>
