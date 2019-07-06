@@ -98,5 +98,33 @@
   {
     "text": "Unfinished Pipes",
     "description": "Pipes in a level where the back end is not attached to anything."
+  },
+  {
+    "text": "Jumps Counted",
+    "description": "A level that kills you if you jump too many times."
+  },
+  {
+    "text": "Required Hidden Block",
+    "description": "A hidden block containing an item required to complete the level. Does not count if the block is overly hinted at (for example multiple arrows pointing at it)."
+  },
+  {
+    "text": "Spin to Win",
+    "description": "A level requiring Mario to spin jump off at least three enemies to complete."
+  },
+  {
+    "text": "\"WHY ARE YOU LIKE THIS?\"",
+    "description": "The player yells at the level designer, usually because of unfair item/enemy placement (see the Intermediate tutorial \"Treating the Player Fairly\")."
+  },
+  {
+    "text": "Misleading Arrows",
+    "description": "An arrow, which, if followed by the player, results in death or other reversal of level progress."
+  },
+  {
+    "text": "Instant Non-Thwomp Death",
+    "description": "Mario will be killed by a hazard other than a thwomp at the start of the level unless he moves out of the way as soon as the level starts."
+  },
+  {
+    "text": "Instant Thwomp Death",
+    "description": "A thwomp which will kill Mario at the start of the level unless he moves out of the way as soon as the level starts."
   }
 ]
