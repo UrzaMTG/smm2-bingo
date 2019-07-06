@@ -5,10 +5,14 @@
   font-family: 'Trebuchet MS';
 }
 
-.top-bar
-{
+.top-bar {
   padding: 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.highlight {
+  font-weight: bold;
+  color: darkgreen;
 }
