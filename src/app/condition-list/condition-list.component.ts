@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Condition } from '../condition';
 import { ConditionsService } from '../conditions.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ConditionsService } from '../conditions.service';
   styleUrls: ['./condition-list.component.css']
 })
 export class ConditionListComponent implements OnInit {
-  conditions;
+  conditions: Condition[];
 
   constructor(
     private conditionsService: ConditionsService
