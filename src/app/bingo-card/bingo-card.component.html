@@ -2,27 +2,27 @@
 
 <table id="bingoTable">
   <tr>
-    <td class="bingo-spot" *ngFor="let condition of row1; index as id">
+    <td class="bingo-spot" *ngFor="let condition of row1; let i = index" [id]="'row1-col' + i" (click)="toggleCell(condition, $event)">
       <app-bingo-spot [condition]="condition"></app-bingo-spot>
     </td>
   </tr>
   <tr>
-    <td class="bingo-spot" *ngFor="let condition of row2; index as id">
+    <td class="bingo-spot" *ngFor="let condition of row2; let i = index" [id]="'row2-col' + i" (click)="toggleCell(condition, $event)">
       <app-bingo-spot [condition]="condition"></app-bingo-spot>
     </td>
   </tr>
   <tr>
-    <td class="bingo-spot" *ngFor="let condition of row3; index as id">
+    <td class="bingo-spot" *ngFor="let condition of row3; let i = index" [id]="'row3-col' + i" (click)="toggleCell(condition, $event)">
       <app-bingo-spot [condition]="condition"></app-bingo-spot>
     </td>
   </tr>
   <tr>
-    <td class="bingo-spot" *ngFor="let condition of row4; index as id">
+    <td class="bingo-spot" *ngFor="let condition of row4; let i = index" [id]="'row4-col' + i" (click)="toggleCell(condition, $event)">
       <app-bingo-spot [condition]="condition"></app-bingo-spot>
     </td>
   </tr>
   <tr>
-    <td class="bingo-spot" *ngFor="let condition of row5; index as id">
+    <td class="bingo-spot" *ngFor="let condition of row5; let i = index" [id]="'row5-col' + i" (click)="toggleCell(condition, $event)">
       <app-bingo-spot [condition]="condition"></app-bingo-spot>
     </td>
   </tr>
