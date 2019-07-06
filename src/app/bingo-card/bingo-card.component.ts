@@ -23,7 +23,7 @@ export class BingoCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    var selectedIDs: number[] = []];
+    var selectedIDs: number[] = [];
 
     while (this.row1.length < 5)
     {
