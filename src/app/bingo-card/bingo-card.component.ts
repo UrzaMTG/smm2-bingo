@@ -25,21 +25,60 @@ export class BingoCardComponent implements OnInit {
   ngOnInit() {
     var selectedIDs: number[] = [];
 
-    //while (this.row1.length < 5)
+    while (this.row1.length < 5)
     {
       var randCondition: Condition;
       randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) > -1)
+      if (selectedIDs.indexOf(randCondition.id) === -1)
       {
         this.row1.push(randCondition);
         selectedIDs.push(randCondition.id);
       }
     }
-    this.row2.push(this.conditionsList[0]);
-    this.row2.push(this.conditionsList[0]);
-    this.row2.push(this.conditionsList[0]);
-    this.row2.push(this.conditionsList[0]);
-    this.row2.push(this.conditionsList[0]);
+
+    while (this.row2.length < 5)
+    {
+      var randCondition: Condition;
+      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+      if (selectedIDs.indexOf(randCondition.id) === -1)
+      {
+        this.row2.push(randCondition);
+        selectedIDs.push(randCondition.id);
+      }
+    }
+
+    while (this.row3.length < 5)
+    {
+      var randCondition: Condition;
+      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+      if (selectedIDs.indexOf(randCondition.id) === -1)
+      {
+        this.row3.push(randCondition);
+        selectedIDs.push(randCondition.id);
+      }
+    }
+
+    while (this.row4.length < 5)
+    {
+      var randCondition: Condition;
+      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+      if (selectedIDs.indexOf(randCondition.id) === -1)
+      {
+        this.row4.push(randCondition);
+        selectedIDs.push(randCondition.id);
+      }
+    }
+
+    while (this.row5.length < 5)
+    {
+      var randCondition: Condition;
+      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+      if (selectedIDs.indexOf(randCondition.id) === -1)
+      {
+        this.row5.push(randCondition);
+        selectedIDs.push(randCondition.id);
+      }
+    }
   }
 
 }
