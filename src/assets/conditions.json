@@ -156,7 +156,32 @@
   },
   {
     "id": 32,
-    "text": "Instant Thwomp Death",
-    "description": "A thwomp which will kill Mario at the start of the level unless he moves out of the way as soon as the level starts."
+    "text": "Too Many 1-Ups",
+    "description": "The level gives the player 3 or more 1-ups in a single life."
+  },
+  {
+    "id": 33,
+    "text": "Awful Title",
+    "description": "The title of the level is bad, for any number of reasons (begging for likes, etc)."
+  },
+  {
+    "id": 34,
+    "text": "Unintentional Cheese",
+    "description": "The player is able to skip large portions of the level by subverting an obstacle."
+  },
+  {
+    "id": 35,
+    "text": "Cat Enemies, Everywhere",
+    "description": "A section of the level has an excessive number of non-boss enemies with cat bells applied to them."
+  },
+  {
+    "id": 36,
+    "text": "Skipped Level",
+    "description": "The player chooses to skip a level for any reason."
+  },
+  {
+    "id": 36,
+    "text": "Upside Down Level",
+    "description": "The upside-down mechanic is used in the level."
   }
 ]
