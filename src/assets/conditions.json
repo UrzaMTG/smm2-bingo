@@ -183,5 +183,15 @@
     "id": 36,
     "text": "Upside Down Level",
     "description": "The upside-down mechanic is used in the level."
+  },
+  {
+    "id": 37,
+    "text": "World Record",
+    "description": "Player achieved the world recoord time for a level."
+  },
+  {
+    "id": 38,
+    "text": "First Clear",
+    "description": "Player was the first person to clear the level."
   }
 ]
