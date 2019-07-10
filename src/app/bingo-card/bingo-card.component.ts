@@ -10,11 +10,7 @@ import { ConditionsService } from '../conditions.service';
 })
 export class BingoCardComponent implements OnInit {
   conditionsList: Condition[];
-  row1: Condition[] = [];
-  row2: Condition[] = [];
-  row3: Condition[] = [];
-  row4: Condition[] = [];
-  row5: Condition[] = [];
+  rows: Condition[][] = [];
 
   constructor(
     private conditionsService: ConditionsService
@@ -23,61 +19,38 @@ export class BingoCardComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Generate the spots for the bingo card; this will be removed once settings are implemented
+    this.generateCard(5, 5);
+  }
+
+  generateCard(desiredRows: number, desiredCols: number): void
+  {
     var selectedIDs: number[] = [];
 
-    while (this.row1.length < 5)
+    // Loop until we have enough rows
+    while (this.rows.length < desiredRows)
     {
-      var randCondition: Condition;
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) === -1)
-      {
-        this.row1.push(randCondition);
-        selectedIDs.push(randCondition.id);
-      }
-    }
+      // Create the collection of conditions for the current row
+      var row: Condition[] = [];
 
-    while (this.row2.length < 5)
-    {
-      var randCondition: Condition;
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) === -1)
+      // Loop until we have enough conditions for the row
+      while (row.length < desiredCols)
       {
-        this.row2.push(randCondition);
-        selectedIDs.push(randCondition.id);
-      }
-    }
+        var randCondition: Condition;
 
-    while (this.row3.length < 5)
-    {
-      var randCondition: Condition;
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) === -1)
-      {
-        this.row3.push(randCondition);
-        selectedIDs.push(randCondition.id);
+        // Pick a condition from the list
+        randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+        // If the condition we picked is not already in the list, add it to the row
+        if (selectedIDs.indexOf(randCondition.id) === -1)
+        {
+          row.push(randCondition);
+          // Keep track of the condition we used to avoid duplicates on the card
+          selectedIDs.push(randCondition.id);
+        }
       }
-    }
 
-    while (this.row4.length < 5)
-    {
-      var randCondition: Condition;
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) === -1)
-      {
-        this.row4.push(randCondition);
-        selectedIDs.push(randCondition.id);
-      }
-    }
-
-    while (this.row5.length < 5)
-    {
-      var randCondition: Condition;
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-      if (selectedIDs.indexOf(randCondition.id) === -1)
-      {
-        this.row5.push(randCondition);
-        selectedIDs.push(randCondition.id);
-      }
+      // Add the filled row to the collection of rows
+      this.rows.push(row);
     }
   }
 
@@ -94,6 +67,7 @@ export class BingoCardComponent implements OnInit {
       document.getElementById(elemId).classList.add("toggled");
     }
 
+    // Make sure to flip the toggled state for the next click
     condition.toggled = !condition.toggled;
   }
 }

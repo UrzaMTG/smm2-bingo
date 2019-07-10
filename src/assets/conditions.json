@@ -41,13 +41,13 @@
   },
   {
     "id": 9,
-    "text": "Bob-omb Excavation",
-    "description": "A level requiring the player to open a path by exploding three or more bob-ombs to destroy blocks."
+    "text": "Bomb/Shell/Bowser Excavation",
+    "description": "A level requiring the player to open a path by exploding bob-ombs, kicking shells, or manipulating Bowser to destroy blocks."
   },
   {
     "id": 10,
     "text": "Break Scroll Stops",
-    "description": "A level requiring the player to advance by destroying blocks that otherwise create a scroll stop three or more times."
+    "description": "A level requiring the player to advance by destroying blocks that create a scroll stop three or more times."
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
   },
   {
     "id": 20,
-    "text": "Mostly Covered Exit Flag / Axe / Etc.",
+    "text": "Mostly Covered Exit",
     "description": "A level where the exit is mostly covered with blocks or enemies, leaving only a small section exposed."
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "id": 25,
-    "text": "Unfinished Pipes",
+    "text": "Unfinished/Naked Pipes",
     "description": "Pipes in a level where the back end is not attached to anything."
   },
   {
@@ -193,5 +193,165 @@
     "id": 39,
     "text": "First Clear",
     "description": "Player was the first person to clear the level."
+  },
+  {
+    "id": 40,
+    "text": "Enemy in all ? blocks",
+    "description": "Every question mark block in the level contains an enemy."
+  },
+  {
+    "id": 41,
+    "text": "Cheep Death",
+    "description": "A Cheep-Cheep kills the player."
+  },
+  {
+    "id": 42,
+    "text": "New Supe Speedrun",
+    "description": "A speedrun level in the New Super Mario Brothers theme."
+  },
+  {
+    "id": 43,
+    "text": "SFX Spam",
+    "description": "A large number of sound effects are placed in the level, to the annoyance of everyone."
+  },
+  {
+    "id": 44,
+    "text": "Lakitu/Cape Cheese",
+    "description": "A Lakitu cloud or a cape is used to skip large portions of the level."
+  },
+  {
+    "id": 45,
+    "text": "Forced Yoshi Win",
+    "description": "The level forces you to have Yoshi at the end of the level, with or without a clear condition for Yoshi."
+  },
+  {
+    "id": 46,
+    "text": "A Decent Level",
+    "description": "The level was not total garbage (does not imply the player Liked the level)."
+  },
+  {
+    "id": 47,
+    "text": "No Music SFX",
+    "description": "The Silence SFX is used in the level to remove the music."
+  },
+  {
+    "id": 48,
+    "text": "Glitch Level",
+    "description": "The level utilizes a glitch in order for the player to complete it."
+  },
+  {
+    "id": 49,
+    "text": "Official Level",
+    "description": "The level is copied from an official Mario level."
+  },
+  {
+    "id": 50,
+    "text": "Remix",
+    "description": "The level is a modified version of an official Mario level."
+  },
+  {
+    "id": 51,
+    "text": "Autoscroller",
+    "description": "The level uses autoscrolling for a majority of the level."
+  },
+  {
+    "id": 52,
+    "text": "Stacked Pipes",
+    "description": "The level utilizes multiple pipes in the same space."
+  },
+  {
+    "id": 53,
+    "text": "Boss Stack",
+    "description": "Multiple Bowsers or other bosses placed on top of each other."
+  },
+  {
+    "id": 54,
+    "text": "Enemy Spam",
+    "description": "An inordinate number of enemies fill part of the level."
+  },
+  {
+    "id": 55,
+    "text": "Spike Maze",
+    "description": "A maze of spikes must be navigated to get to the end of the level."
+  },
+  {
+    "id": 56,
+    "text": "Optional Red Coins",
+    "description": "There are red coins in the level that unlock an optional path."
+  },
+  {
+    "id": 57,
+    "text": "Useless Keys",
+    "description": "The player is able to skip key doors and end the level with at least one key in their possession."
+  },
+  {
+    "id": 58,
+    "text": "Troll Level",
+    "description": "The level was made to trick the player in one or more ways."
+  },
+  {
+    "id": 59,
+    "text": "P-Switch Run",
+    "description": "Running across strings of P-Switches is required to get to the end of the level."
+  },
+  {
+    "id": 60,
+    "text": "Giant Bowser Fire Flower Kill",
+    "description": "A giant Bowser/Meowser that must be killed with Fire Flower fireballs is present in the level."
+  },
+  {
+    "id": 61,
+    "text": "Precision Level",
+    "description": "A level with many precise platforming sections."
+  },
+  {
+    "id": 62,
+    "text": "Kamek Despawns Goal",
+    "description": "A Kamek enemy is placed in a way that it despawns the goal and must be killed."
+  },
+  {
+    "id": 63,
+    "text": "Level Creator: Mom/Dad",
+    "description": "The level name or creator references Mom or Dad."
+  },
+  {
+    "id": 64,
+    "text": "Post-Goal Death",
+    "description": "The player's path off/from the exit causes them to \"die\" after achieving victory."
+  },
+  {
+    "id": 65,
+    "text": "Survival Red Coin Challenges",
+    "description": "The level contains one or more sections of surviving a room until a red coin becomes available to obtain."
+  },
+  {
+    "id": 66,
+    "text": "Shell/Spring/POW Jump",
+    "description": "The player must make a shell jump, spring jump, or POW jump to advance in the level."
+  },
+  {
+    "id": 67,
+    "text": "P-Switch Jump",
+    "description": "The player must make a P-Switch jump to advance in the level."
+  },
+  {
+    "id": 68,
+    "text": "Mid-Air/TAS Jump",
+    "description": "The player must make a mid-air (usually frame-perfect) jump to advance in the level."
+  },
+  {
+    "id": 69,
+    "text": "Repeat Level",
+    "description": "The same level appears more than once in the same run."
+  },
+  {
+    "id": 70,
+    "text": "Give It a Like",
+    "description": "A level gets a deserved Like from the player."
+  },
+  {
+    "id": 71,
+    "text": "Give It a Boo",
+    "description": "A level gets a deserved Boo from the player."
   }
 ]
