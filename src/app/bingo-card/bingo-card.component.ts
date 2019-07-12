@@ -20,8 +20,6 @@ export class BingoCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Generate the spots for the bingo card; this will be removed once settings are implemented
-    this.generateCard(5, 5);
   }
 
   generateCard_click()
