@@ -11,6 +11,7 @@ import { ConditionsService } from '../conditions.service';
 export class BingoCardComponent implements OnInit {
   conditionsList: Condition[];
   rows: Condition[][] = [];
+  multiplayer: boolean = false;
 
   constructor(
     private conditionsService: ConditionsService
@@ -23,7 +24,13 @@ export class BingoCardComponent implements OnInit {
     this.generateCard(5, 5);
   }
 
-  generateCard(desiredRows: number, desiredCols: number): void
+  generateCard_click()
+  {
+    this.generateCard(5, 5);
+    document.getElementById("bingoTable").classList.remove("hidden");
+  }
+
+  private generateCard(desiredRows: number, desiredCols: number): void
   {
     var selectedIDs: number[] = [];
 
@@ -40,6 +47,16 @@ export class BingoCardComponent implements OnInit {
 
         // Pick a condition from the list
         randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+
+        if(this.multiplayer && !randCondition.multiplayer)
+        {
+          continue;
+        }
+        else if(!this.multiplayer && !randCondition.singleplayer)
+        {
+          continue;
+        }
+
         // If the condition we picked is not already in the list, add it to the row
         if (selectedIDs.indexOf(randCondition.id) === -1)
         {

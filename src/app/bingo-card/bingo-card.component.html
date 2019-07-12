@@ -1,6 +1,11 @@
 <h1>SMM2 Bingo</h1>
 
-<table id="bingoTable">
+<div id="settings">
+  <input id="chkMulti" type="checkbox" [checked]="multiplayer" (change)="multiplayer = !multiplayer" />Multiplayer
+  <button id="btnGenerate" (click)="generateCard_click()">Generate Card</button>
+</div>
+
+<table id="bingoTable" class="hidden">
   <tr *ngFor="let row of rows; let rowIndex = index">
     <td class="bingo-spot" *ngFor="let condition of row; let colIndex = index" [id]="'row' + rowIndex + '-col' + colIndex" [title]="condition.description" (click)="toggleCell(condition, $event)">
       {{ condition.text }}

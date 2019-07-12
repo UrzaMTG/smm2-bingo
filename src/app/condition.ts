@@ -3,4 +3,6 @@ export class Condition {
   text: string;
   description: string;
   toggled: boolean = false;
+  singleplayer: boolean;
+  multiplayer: boolean;
 }
