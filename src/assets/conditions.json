@@ -2,356 +2,540 @@
   {
     "id": 1,
     "text": "Kaizo Block",
-    "description": "A hidden question block that blocks a jump or creates a soft-lock."
+    "description": "A hidden question block that blocks a jump or creates a soft-lock.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 2,
     "text": "3+ Bosses",
-    "description": "A level which has at least three Bowser, Bowser Jr., Meowser, Boom Boom, or Pom Pom enemies in it."
+    "description": "A level which has at least three Bowser, Bowser Jr., Meowser, Boom Boom, or Pom Pom enemies in it.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 3,
     "text": "Blind Jump",
-    "description": "A jump in the level where the player is unable to see where or if a safe landing area exists until after Mario jumps."
+    "description": "A jump in the level where the player is unable to see where or if a safe landing area exists until after Mario jumps.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 4,
     "text": "Forced Yoshi Murder",
-    "description": "A level which requires the player to kill Yoshi in order to advance."
+    "description": "A level which requires the player to kill Yoshi in order to advance.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 5,
     "text": "No Jump Level, Cape/Freefall",
-    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump."
+    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 6,
     "text": "No Jump Level, Platform Manipulation",
-    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position."
+    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 7,
     "text": "Boo Ring in Question Block",
-    "description": "A block (question, note, brick, etc.) that, when hit, generates a boo ring."
+    "description": "A block (question, note, brick, etc.) that, when hit, generates a boo ring.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 8,
     "text": "Dev Route",
-    "description": "A path (door, pipe, or otherwise) not intended to be found by the player, which trivializes the level."
+    "description": "A path (door, pipe, or otherwise) not intended to be found by the player, which trivializes the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 9,
     "text": "Bomb/Shell/Bowser Excavation",
-    "description": "A level requiring the player to open a path by exploding bob-ombs, kicking shells, or manipulating Bowser to destroy blocks."
+    "description": "A level requiring the player to open a path by exploding bob-ombs, kicking shells, or manipulating Bowser to destroy blocks.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 10,
     "text": "Break Scroll Stops",
-    "description": "A level requiring the player to advance by destroying blocks that create a scroll stop three or more times."
+    "description": "A level requiring the player to advance by destroying blocks that create a scroll stop three or more times.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 11,
     "text": "Misleading Coin Path",
-    "description": "A coin path, which, if followed by the player, results in death or other reversal of level progress."
+    "description": "A coin path, which, if followed by the player, results in death or other reversal of level progress.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 12,
     "text": "Instant Death Door",
-    "description": "A door which, when taken, immediately leads to Mario's death. The player must actually die from such a door to count."
+    "description": "A door which, when taken, immediately leads to Mario's death. The player must actually die from such a door to count.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 13,
     "text": "Pick-a-Pipe",
-    "description": "A point in the level where the player must choose between multiple identical options (doors, pipes, etc.) without being able to tell which choice is correct."
+    "description": "A point in the level where the player must choose between multiple identical options (doors, pipes, etc.) without being able to tell which choice is correct.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 14,
     "text": "Vertical Rising Lava/Poison Level",
-    "description": "A level where the sub-area is vertical, and the player is racing the lava/poison/other danger that is rising from the bottom of the screen."
+    "description": "A level where the sub-area is vertical, and the player is racing the lava/poison/other danger that is rising from the bottom of the screen.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 15,
     "text": "Puzzle Level",
-    "description": "A genuine puzzle level. Mazes do not count as puzzles."
+    "description": "A genuine puzzle level. Mazes do not count as puzzles.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 16,
     "text": "Fire Yoshi",
-    "description": "A level that requires using a red Yoshi to beat the level."
+    "description": "A level that requires using a red Yoshi to beat the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 17,
     "text": "Collect Coins Clear Condition",
-    "description": "A level that requires the player to collect all of the coins on the level to open the exit, or that requires the player to collect a minimum number of coins to open the exit."
+    "description": "A level that requires the player to collect all of the coins on the level to open the exit, or that requires the player to collect a minimum number of coins to open the exit.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 18,
     "text": "Good Items Are Bad",
-    "description": "A level where getting an item that is normally considered \"good\" (such as a power-up, star, or P-switch) causes Mario to die or the level to be otherwise unbeatable. Level must contain multiple copies of this item."
+    "description": "A level where getting an item that is normally considered \"good\" (such as a power-up, star, or P-switch) causes Mario to die or the level to be otherwise unbeatable. Level must contain multiple copies of this item.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 19,
     "text": "Checkpoint Troll",
-    "description": "A level where, if the wrong path is taken, the player is forced to hit a checkpoint for a loss of progress."
+    "description": "A level where, if the wrong path is taken, the player is forced to hit a checkpoint for a loss of progress.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 20,
     "text": "Mostly Covered Exit",
-    "description": "A level where the exit is mostly covered with blocks or enemies, leaving only a small section exposed."
+    "description": "A level where the exit is mostly covered with blocks or enemies, leaving only a small section exposed.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 21,
     "text": "Soft Lock",
-    "description": "The player gets in a position where they are unable to continue progress in the level, due to getting Mario stuck, losing a required powerup, etc. This counts even if suicide is an option."
+    "description": "The player gets in a position where they are unable to continue progress in the level, due to getting Mario stuck, losing a required powerup, etc. This counts even if suicide is an option.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 22,
     "text": "Time Limit < 100 seconds",
-    "description": "A level which starts with fewer than 100 seconds on the timer."
+    "description": "A level which starts with fewer than 100 seconds on the timer.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 23,
     "text": "Wall Jump Level",
-    "description": "A level heavily featuring the wall jump mechanic."
+    "description": "A level heavily featuring the wall jump mechanic.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 24,
     "text": "On/Off Switch Level",
-    "description": "A level heavily featuring the On/Off switch for blocks, conveyors, tracks, etc."
+    "description": "A level heavily featuring the On/Off switch for blocks, conveyors, tracks, etc.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 25,
     "text": "Unfinished/Naked Pipes",
-    "description": "Pipes in a level where the back end is not attached to anything."
+    "description": "Pipes in a level where the back end is not attached to anything.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 26,
     "text": "Jumps Counted",
-    "description": "A level that kills you if you jump too many times."
+    "description": "A level that kills you if you jump too many times.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 27,
     "text": "Required Hidden Block",
-    "description": "A hidden block containing an item required to complete the level. Does not count if the block is overly hinted at (for example multiple arrows pointing at it)."
+    "description": "A hidden block containing an item required to complete the level. Does not count if the block is overly hinted at (for example multiple arrows pointing at it).",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 28,
     "text": "Spin to Win",
-    "description": "A level requiring Mario to spin jump off at least three enemies to complete."
+    "description": "A level requiring Mario to spin jump off at least three enemies to complete.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 29,
     "text": "\"WHY ARE YOU LIKE THIS?\"",
-    "description": "The player yells at the level designer, usually because of unfair item/enemy placement (see the Intermediate tutorial \"Treating the Player Fairly\")."
+    "description": "The player yells at the level designer, usually because of unfair item/enemy placement (see the Intermediate tutorial \"Treating the Player Fairly\").",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 30,
     "text": "Misleading Arrows",
-    "description": "An arrow, which, if followed by the player, results in death or other reversal of level progress."
+    "description": "An arrow, which, if followed by the player, results in death or other reversal of level progress.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 31,
     "text": "Instant Non-Thwomp Death",
-    "description": "Mario will be killed by a hazard other than a thwomp at the start of the level unless he moves out of the way as soon as the level starts."
+    "description": "Mario will be killed by a hazard other than a thwomp at the start of the level unless he moves out of the way as soon as the level starts.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 32,
     "text": "Too Many 1-Ups",
-    "description": "The level gives the player 3 or more 1-ups in a single life."
+    "description": "The level gives the player 3 or more 1-ups in a single life.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 33,
     "text": "Awful Title",
-    "description": "The title of the level is bad, for any number of reasons (begging for likes, etc)."
+    "description": "The title of the level is bad, for any number of reasons (begging for likes, etc).",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 34,
     "text": "Unintentional Cheese",
-    "description": "The player is able to skip large portions of the level by subverting an obstacle."
+    "description": "The player is able to skip large portions of the level by subverting an obstacle.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 35,
-    "text": "Cat Enemies, Everywhere",
-    "description": "A section of the level has an excessive number of non-boss enemies with cat bells applied to them."
+    "text": "Cats, Everywhere",
+    "description": "A level with a lot of Cat Bell powerups and/or a lot of enemies with Cat Bells applied to them.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 36,
     "text": "Skipped Level",
-    "description": "The player chooses to skip a level for any reason."
+    "description": "The player chooses to skip a level for any reason.",
+    "singleplayer": true,
+    "multiplayer": false
   },
   {
     "id": 37,
     "text": "Upside Down Level",
-    "description": "The upside-down mechanic is used in the level."
+    "description": "The upside-down mechanic is used in the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 38,
     "text": "World Record",
-    "description": "Player achieved the world recoord time for a level."
+    "description": "Player achieved the world recoord time for a level.",
+    "singleplayer": true,
+    "multiplayer": false
   },
   {
     "id": 39,
     "text": "First Clear",
-    "description": "Player was the first person to clear the level."
+    "description": "Player was the first person to clear the level.",
+    "singleplayer": true,
+    "multiplayer": false
   },
   {
     "id": 40,
     "text": "Enemy in all ? blocks",
-    "description": "Every question mark block in the level contains an enemy."
+    "description": "Every question mark block in the level contains an enemy.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 41,
     "text": "Cheep Death",
-    "description": "A Cheep-Cheep kills the player."
+    "description": "A Cheep-Cheep kills the player.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 42,
     "text": "New Supe Speedrun",
-    "description": "A speedrun level in the New Super Mario Brothers theme."
+    "description": "A speedrun level in the New Super Mario Brothers theme.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 43,
     "text": "SFX Spam",
-    "description": "A large number of sound effects are placed in the level, to the annoyance of everyone."
+    "description": "A large number of sound effects are placed in the level, to the annoyance of everyone.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 44,
     "text": "Lakitu/Cape Cheese",
-    "description": "A Lakitu cloud or a cape is used to skip large portions of the level."
+    "description": "A Lakitu cloud or a cape is used to skip large portions of the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 45,
     "text": "Forced Yoshi Win",
-    "description": "The level forces you to have Yoshi at the end of the level, with or without a clear condition for Yoshi."
+    "description": "The level forces you to have Yoshi at the end of the level, with or without a clear condition for Yoshi.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 46,
     "text": "A Decent Level",
-    "description": "The level was not total garbage (does not imply the player Liked the level)."
+    "description": "The level was not total garbage (does not imply the player Liked the level).",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 47,
     "text": "No Music SFX",
-    "description": "The Silence SFX is used in the level to remove the music."
+    "description": "The Silence SFX is used in the level to remove the music.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 48,
     "text": "Glitch Level",
-    "description": "The level utilizes a glitch in order for the player to complete it."
+    "description": "The level utilizes a glitch in order for the player to complete it.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 49,
     "text": "Official Level",
-    "description": "The level is copied from an official Mario level."
+    "description": "The level is copied from an official Mario level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 50,
     "text": "Remix",
-    "description": "The level is a modified version of an official Mario level."
+    "description": "The level is a modified version of an official Mario level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 51,
     "text": "Autoscroller",
-    "description": "The level uses autoscrolling for a majority of the level."
+    "description": "The level uses autoscrolling for a majority of the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 52,
     "text": "Stacked Pipes",
-    "description": "The level utilizes multiple pipes in the same space."
+    "description": "The level utilizes multiple pipes in the same space.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 53,
     "text": "Boss Stack",
-    "description": "Multiple Bowsers or other bosses placed on top of each other."
+    "description": "Multiple Bowsers or other bosses placed on top of each other.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 54,
     "text": "Enemy Spam",
-    "description": "An inordinate number of enemies fill part of the level."
+    "description": "An inordinate number of enemies fill part of the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 55,
     "text": "Spike Maze",
-    "description": "A maze of spikes must be navigated to get to the end of the level."
+    "description": "A maze of spikes must be navigated to get to the end of the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 56,
     "text": "Optional Red Coins",
-    "description": "There are red coins in the level that unlock an optional path."
+    "description": "There are red coins in the level that unlock an optional path.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 57,
     "text": "Useless Keys",
-    "description": "The player is able to skip key doors and end the level with at least one key in their possession."
+    "description": "The player is able to skip key doors and end the level with at least one key in their possession.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 58,
     "text": "Troll Level",
-    "description": "The level was made to trick the player in one or more ways."
+    "description": "The level was made to trick the player in one or more ways.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 59,
     "text": "P-Switch Run",
-    "description": "Running across strings of P-Switches is required to get to the end of the level."
+    "description": "Running across strings of P-Switches is required to get to the end of the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 60,
     "text": "Giant Bowser Fire Flower Kill",
-    "description": "A giant Bowser/Meowser that must be killed with Fire Flower fireballs is present in the level."
+    "description": "A giant Bowser/Meowser that must be killed with Fire Flower fireballs is present in the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 61,
     "text": "Precision Level",
-    "description": "A level with many precise platforming sections."
+    "description": "A level with many precise platforming sections.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 62,
     "text": "Kamek Despawns Goal",
-    "description": "A Kamek enemy is placed in a way that it despawns the goal and must be killed."
+    "description": "A Kamek enemy is placed in a way that it despawns the goal and must be killed.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 63,
     "text": "Level Creator: Mom/Dad",
-    "description": "The level name or creator references Mom or Dad."
+    "description": "The level name or creator references Mom or Dad.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 64,
     "text": "Post-Goal Death",
-    "description": "The player's path off/from the exit causes them to \"die\" after achieving victory."
+    "description": "The player's path off/from the exit causes them to \"die\" after achieving victory.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 65,
     "text": "Survival Red Coin Challenges",
-    "description": "The level contains one or more sections of surviving a room until a red coin becomes available to obtain."
+    "description": "The level contains one or more sections of surviving a room until a red coin becomes available to obtain.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 66,
     "text": "Shell/Spring/POW Jump",
-    "description": "The player must make a shell jump, spring jump, or POW jump to advance in the level."
+    "description": "The player must make a shell jump, spring jump, or POW jump to advance in the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 67,
     "text": "P-Switch Jump",
-    "description": "The player must make a P-Switch jump to advance in the level."
+    "description": "The player must make a P-Switch jump to advance in the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 68,
     "text": "Mid-Air/TAS Jump",
-    "description": "The player must make a mid-air (usually frame-perfect) jump to advance in the level."
+    "description": "The player must make a mid-air (usually frame-perfect) jump to advance in the level.",
+    "singleplayer": true,
+    "multiplayer": true
   },
   {
     "id": 69,
     "text": "Repeat Level",
-    "description": "The same level appears more than once in the same run."
+    "description": "The same level appears more than once in the same run.",
+    "singleplayer": true,
+    "multiplayer": false
   },
   {
     "id": 70,
     "text": "Give It a Like",
-    "description": "A level gets a deserved Like from the player."
+    "description": "A level gets a deserved Like from the player.",
+    "singleplayer": true,
+    "multiplayer": false
   },
   {
     "id": 71,
     "text": "Give It a Boo",
-    "description": "A level gets a deserved Boo from the player."
+    "description": "A level gets a deserved Boo from the player.",
+    "singleplayer": true,
+    "multiplayer": false
+  },
+  {
+    "id": 72,
+    "text": "Thrown By Player To Death",
+    "description": "Another player picked up the player and threw them into death (pit, enemy, etc).",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 73,
+    "text": "Thrown Player To Death",
+    "description": "The player picked up another player and threw them into death (pit, enemy, etc).",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 74,
+    "text": "Communication Error",
+    "description": "A communications error occurs and ends the level early.",
+    "singleplayer": true,
+    "multiplayer": true
+  },
+  {
+    "id": 75,
+    "text": "Photo Finish",
+    "description": "Two or more players finish the level within a few frames of each other.",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 76,
+    "text": "Clear Condition Royale",
+    "description": "A multiplayer level with a large space for the players to fight over the clear condition.",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 77,
+    "text": "Switch Chaos",
+    "description": "A multiplayer level with On/Off switches or P-Switches that kill other players when they are hit.",
+    "singleplayer": false,
+    "multiplayer": true
   }
 ]
