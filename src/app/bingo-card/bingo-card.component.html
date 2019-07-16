@@ -1,9 +1,12 @@
-<h1>SMM2 Bingo</h1>
+<h1>Bingo</h1>
 
 <div id="settings">
   <input id="chkMulti" type="checkbox" [checked]="multiplayer" (change)="multiplayer = !multiplayer" />Multiplayer
-  <button id="btnGenerate" (click)="generateCard_click()">Generate Card</button>
+  <br/>
+  <button id="btnGenerate" (click)="generateCard_click()">Generate New Card</button>
 </div>
+
+<br/>
 
 <table id="bingoTable" class="hidden">
   <tr *ngFor="let row of rows; let rowIndex = index">

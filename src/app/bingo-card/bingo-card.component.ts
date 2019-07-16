@@ -10,7 +10,7 @@ import { ConditionsService } from '../conditions.service';
 })
 export class BingoCardComponent implements OnInit {
   conditionsList: Condition[];
-  rows: Condition[][] = [];
+  rows: Condition[][];
   multiplayer: boolean = false;
 
   constructor(
@@ -30,6 +30,8 @@ export class BingoCardComponent implements OnInit {
 
   private generateCard(desiredRows: number, desiredCols: number): void
   {
+    this.rows = [];
+
     var selectedIDs: number[] = [];
 
     // Loop until we have enough rows

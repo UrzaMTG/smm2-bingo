@@ -29,7 +29,7 @@
   },
   {
     "id": 5,
-    "text": "No Jump Level, Cape/Freefall",
+    "text": "No Jump Level, Cape / Freefall",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump.",
     "singleplayer": true,
     "multiplayer": true
@@ -57,7 +57,7 @@
   },
   {
     "id": 9,
-    "text": "Bomb/Shell/Bowser Excavation",
+    "text": "Bomb / Shell / Bowser Excavation",
     "description": "A level requiring the player to open a path by exploding bob-ombs, kicking shells, or manipulating Bowser to destroy blocks.",
     "singleplayer": true,
     "multiplayer": true
@@ -92,7 +92,7 @@
   },
   {
     "id": 14,
-    "text": "Vertical Rising Lava/Poison Level",
+    "text": "Vertical Rising Lava / Poison Level",
     "description": "A level where the sub-area is vertical, and the player is racing the lava/poison/other danger that is rising from the bottom of the screen.",
     "singleplayer": true,
     "multiplayer": true
@@ -162,14 +162,14 @@
   },
   {
     "id": 24,
-    "text": "On/Off Switch Level",
+    "text": "On / Off Switch Level",
     "description": "A level heavily featuring the On/Off switch for blocks, conveyors, tracks, etc.",
     "singleplayer": true,
     "multiplayer": true
   },
   {
     "id": 25,
-    "text": "Unfinished/Naked Pipes",
+    "text": "Unfinished / Naked Pipes",
     "description": "Pipes in a level where the back end is not attached to anything.",
     "singleplayer": true,
     "multiplayer": true
@@ -302,7 +302,7 @@
   },
   {
     "id": 44,
-    "text": "Lakitu/Cape Cheese",
+    "text": "Lakitu / Cape Cheese",
     "description": "A Lakitu cloud or a cape is used to skip large portions of the level.",
     "singleplayer": true,
     "multiplayer": true
@@ -435,7 +435,7 @@
   },
   {
     "id": 63,
-    "text": "Level Creator: Mom/Dad",
+    "text": "Level Creator: Mom / Dad",
     "description": "The level name or creator references Mom or Dad.",
     "singleplayer": true,
     "multiplayer": true
@@ -456,7 +456,7 @@
   },
   {
     "id": 66,
-    "text": "Shell/Spring/POW Jump",
+    "text": "Shell / Spring / POW Jump",
     "description": "The player must make a shell jump, spring jump, or POW jump to advance in the level.",
     "singleplayer": true,
     "multiplayer": true
@@ -470,7 +470,7 @@
   },
   {
     "id": 68,
-    "text": "Mid-Air/TAS Jump",
+    "text": "Mid-Air / TAS Jump",
     "description": "The player must make a mid-air (usually frame-perfect) jump to advance in the level.",
     "singleplayer": true,
     "multiplayer": true

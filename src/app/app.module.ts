@@ -8,6 +8,7 @@ import { ConditionListComponent } from './condition-list/condition-list.componen
 import { ConditionsService } from './conditions.service';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { BingoCardComponent } from './bingo-card/bingo-card.component';
+import { QuestModeComponent } from './quest-mode/quest-mode.component';
 
 @NgModule({
   imports: [
@@ -15,10 +16,11 @@ import { BingoCardComponent } from './bingo-card/bingo-card.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: BingoCardComponent },
+      { path: 'quest', component: QuestModeComponent },
       { path: 'conditions', component: ConditionListComponent },
     ])
   ],
-  declarations: [AppComponent, ConditionListComponent, NavigationBarComponent, BingoCardComponent],
+  declarations: [AppComponent, ConditionListComponent, NavigationBarComponent, BingoCardComponent, QuestModeComponent],
   bootstrap: [AppComponent],
   providers: [ConditionsService]
 })

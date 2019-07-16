@@ -20,3 +20,27 @@
 .hidden {
   visibility: hidden;
 }
+
+.bingo-spot {
+  border: 1px solid white;
+  width: 115px;
+  height: 115px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.completed-quest {
+  border: 1px solid white;
+  width: 85px;
+  height: 85px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 8pt;
+}
+
+.toggled {
+  background-color: white;
+  color: black;
+}

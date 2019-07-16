@@ -1,0 +1,27 @@
+<h1>Quest</h1>
+
+<div id="settings">
+  <input id="chkMulti" type="checkbox" [checked]="multiplayer" (change)="multiplayer = !multiplayer" />Multiplayer
+  <br/>
+  <button id="btnGenerate" (click)="startQuest()">Start Quest!</button>
+</div>
+
+<div id="questArea" class="hidden">
+  <div id="activeQuests">
+    <table>
+      <tr>
+        <td class="bingo-spot" *ngFor="let quest of activeQuests" (click)="completeQuest(quest, $event)">
+          {{ quest.text }}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="completedQuests">
+    <table>
+      <tr>
+        <td class="completed-quest" *ngFor="let quest of completedQuests">{{ quest.text }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
