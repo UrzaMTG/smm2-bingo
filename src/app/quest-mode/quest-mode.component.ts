@@ -12,7 +12,7 @@ export class QuestModeComponent implements OnInit {
   conditionsList: Condition[];
   multiplayer: boolean = false;
   activeQuests: Condition[];
-  completedQuests: Condition[];
+  completedQuests: Condition[][];
 
   constructor(
     private conditionsService: ConditionsService
@@ -25,6 +25,7 @@ export class QuestModeComponent implements OnInit {
 
   startQuest(): void {
     this.completedQuests = [];
+    this.completedQuests.push([]);
 
     this.selectNewQuests(null);
     
@@ -42,7 +43,11 @@ export class QuestModeComponent implements OnInit {
       // Pick a condition from the list
       randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
 
-      if(this.multiplayer && !randCondition.multiplayer)
+      if (previousQuest !== null && randCondition.id === previousQuest.id)
+      {
+        continue;
+      }
+      else if(this.multiplayer && !randCondition.multiplayer)
       {
         continue;
       }
@@ -62,7 +67,11 @@ export class QuestModeComponent implements OnInit {
   }
 
   completeQuest(quest: Condition, event: any): void {
-    this.completedQuests.push(quest);
+    this.completedQuests[this.completedQuests.length - 1].push(quest);
+    if (this.completedQuests[this.completedQuests.length - 1].length == 10)
+    {
+      this.completedQuests.push([]);
+    }
     this.selectNewQuests(quest);
   }
 

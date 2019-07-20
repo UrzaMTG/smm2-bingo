@@ -19,8 +19,8 @@
 
   <div id="completedQuests">
     <table>
-      <tr>
-        <td class="completed-quest" *ngFor="let quest of completedQuests">{{ quest.text }}</td>
+      <tr *ngFor="let completedRow of completedQuests">
+        <td class="completed-quest" *ngFor="let quest of completedRow">{{ quest.text }}</td>
       </tr>
     </table>
   </div>
