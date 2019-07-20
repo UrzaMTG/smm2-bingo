@@ -7,6 +7,7 @@
 </div>
 
 <div id="questArea" class="hidden">
+  <h3>Active Quests</h3>
   <div id="activeQuests">
     <table>
       <tr>
@@ -17,6 +18,7 @@
     </table>
   </div>
 
+  <h3>Completed Quests ({{ completedCount }})</h3>
   <div id="completedQuests">
     <table>
       <tr *ngFor="let completedRow of completedQuests">

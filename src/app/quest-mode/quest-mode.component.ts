@@ -13,6 +13,7 @@ export class QuestModeComponent implements OnInit {
   multiplayer: boolean = false;
   activeQuests: Condition[];
   completedQuests: Condition[][];
+  completedCount: number;
 
   constructor(
     private conditionsService: ConditionsService
@@ -26,6 +27,7 @@ export class QuestModeComponent implements OnInit {
   startQuest(): void {
     this.completedQuests = [];
     this.completedQuests.push([]);
+    this.completedCount = 0;
 
     this.selectNewQuests(null);
     
@@ -67,6 +69,7 @@ export class QuestModeComponent implements OnInit {
   }
 
   completeQuest(quest: Condition, event: any): void {
+    this.completedCount++;
     this.completedQuests[this.completedQuests.length - 1].push(quest);
     if (this.completedQuests[this.completedQuests.length - 1].length == 10)
     {
