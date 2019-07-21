@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import { Condition } from '../condition';
 import { ConditionsService } from '../conditions.service';
@@ -28,12 +21,9 @@ import { ConditionsService } from '../conditions.service';
         color: 'white'
       })),
       //transitions
-      transition('untoggled => toggled', [
+      transition('untoggled <=> toggled', [
         animate('.5s')
-      ]),
-      transition('toggled => untoggled', [
-        animate('.5s')
-      ]),
+      ])
     ])
   ]
 })
@@ -49,35 +39,32 @@ export class BingoCardComponent implements OnInit {
   ngOnInit() {
   }
 
-  generateCard_click()
-  {
+  generateCard_click() {
     this.generateCard(5, 5);
     document.getElementById("bingoTable").classList.remove("hidden");
   }
 
-  private generateCard(desiredRows: number, desiredCols: number): void
-  {
+  private generateCard(desiredRows: number, desiredCols: number): void {
+    // Reset the base array
     this.rows = [];
 
+    // Create list of already selected conditions, to prevent duplicates
     var selectedIDs: number[] = [];
 
     // Loop until we have enough rows
-    while (this.rows.length < desiredRows)
-    {
+    while (this.rows.length < desiredRows) {
       // Create the collection of conditions for the current row
       var row: Condition[] = [];
 
       // Loop until we have enough conditions for the row
-      while (row.length < desiredCols)
-      {
+      while (row.length < desiredCols) {
         var randCondition: Condition;
 
         // Pick a condition from the list
         randCondition = this.conditionsService.selectRandomCondition(this.multiplayer);
 
         // If the condition we picked is not already in the list, add it to the row
-        if (selectedIDs.indexOf(randCondition.id) === -1)
-        {
+        if (selectedIDs.indexOf(randCondition.id) === -1) {
           row.push(randCondition);
           // Keep track of the condition we used to avoid duplicates on the card
           selectedIDs.push(randCondition.id);
@@ -89,9 +76,8 @@ export class BingoCardComponent implements OnInit {
     }
   }
 
-  toggleCell(condition: Condition, event: any): void
-  {
-    // Make sure to flip the toggled state for the next click
+  toggleCell(condition: Condition, event: any): void {
+    // Flip the toggled state, which will trigger the animation
     condition.toggled = !condition.toggled;
   }
 }

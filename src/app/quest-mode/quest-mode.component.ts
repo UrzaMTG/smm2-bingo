@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import { Condition } from '../condition';
 import { ConditionsService } from '../conditions.service';
@@ -17,27 +10,16 @@ import { ConditionsService } from '../conditions.service';
   styleUrls: ['./quest-mode.component.css'],
   animations: [
     // animation triggers go here
-    trigger('toggleUntoggle', [
-      //states
-      state('untoggled', style({
-        backgroundColor: 'white',
-        color: 'black'
-      })),
-      state('toggled', style({
-        backgroundColor: 'black',
-        color: 'white'
-      })),
-      //transitions
-      transition('untoggled => toggled', [
-        animate('.75s')
-      ]),
-      transition('toggled => untoggled', [
-        animate('.75s')
-      ]),
-    ]),
     trigger('completeQuest', [
-      //states
       //transitions
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('0.25s', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('0.25s', style({ opacity: 0 }))
+      ]),
     ]),
   ]
 })
@@ -98,7 +80,14 @@ export class QuestModeComponent implements OnInit {
     {
       this.completedQuests.push([]);
     }
-    this.selectNewQuests(quest);
+    this.activeQuests = null;
+  }
+
+  finishAnimation(quest: Condition): void {
+    if (this.activeQuests === null)
+    {
+      this.selectNewQuests(quest);
+    }
   }
 
 }

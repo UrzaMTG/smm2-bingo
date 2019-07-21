@@ -11,7 +11,7 @@
   <div id="activeQuests">
     <table>
       <tr>
-        <td class="bingo-spot" *ngFor="let quest of activeQuests" (click)="completeQuest(quest, $event)">
+        <td class="bingo-spot" @completeQuest (@completeQuest.done)="finishAnimation(quest)" *ngFor="let quest of activeQuests" (click)="completeQuest(quest, $event)">
           {{ quest.text }}
         </td>
       </tr>
@@ -22,7 +22,7 @@
   <div id="completedQuests">
     <table>
       <tr *ngFor="let completedRow of completedQuests">
-        <td class="completed-quest" *ngFor="let quest of completedRow">{{ quest.text }}</td>
+        <td class="completed-quest" @completeQuest *ngFor="let quest of completedRow">{{ quest.text }}</td>
       </tr>
     </table>
   </div>
