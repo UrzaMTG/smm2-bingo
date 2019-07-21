@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 import { Condition } from '../condition';
 import { ConditionsService } from '../conditions.service';
@@ -6,10 +14,35 @@ import { ConditionsService } from '../conditions.service';
 @Component({
   selector: 'app-quest-mode',
   templateUrl: './quest-mode.component.html',
-  styleUrls: ['./quest-mode.component.css']
+  styleUrls: ['./quest-mode.component.css'],
+  animations: [
+    // animation triggers go here
+    trigger('toggleUntoggle', [
+      //states
+      state('untoggled', style({
+        backgroundColor: 'white',
+        color: 'black'
+      })),
+      state('toggled', style({
+        backgroundColor: 'black',
+        color: 'white'
+      })),
+      //transitions
+      transition('untoggled => toggled', [
+        animate('.75s')
+      ]),
+      transition('toggled => untoggled', [
+        animate('.75s')
+      ]),
+    ]),
+    trigger('completeQuest', [
+      //states
+      //transitions
+    ]),
+  ]
 })
+
 export class QuestModeComponent implements OnInit {
-  conditionsList: Condition[];
   multiplayer: boolean = false;
   activeQuests: Condition[];
   completedQuests: Condition[][];
@@ -17,9 +50,7 @@ export class QuestModeComponent implements OnInit {
 
   constructor(
     private conditionsService: ConditionsService
-  ) {
-    this.conditionsList = this.conditionsService.conditionsList;
-  }
+  ) { }
 
   ngOnInit() {
   }
@@ -43,17 +74,9 @@ export class QuestModeComponent implements OnInit {
       var randCondition: Condition;
 
       // Pick a condition from the list
-      randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
+      randCondition = this.conditionsService.selectRandomCondition(this.multiplayer);
 
       if (previousQuest !== null && randCondition.id === previousQuest.id)
-      {
-        continue;
-      }
-      else if(this.multiplayer && !randCondition.multiplayer)
-      {
-        continue;
-      }
-      else if(!this.multiplayer && !randCondition.singleplayer)
       {
         continue;
       }

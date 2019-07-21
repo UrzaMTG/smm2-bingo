@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 import { Condition } from '../condition';
 import { ConditionsService } from '../conditions.service';
@@ -6,18 +14,37 @@ import { ConditionsService } from '../conditions.service';
 @Component({
   selector: 'app-bingo-card',
   templateUrl: './bingo-card.component.html',
-  styleUrls: ['./bingo-card.component.css']
+  styleUrls: ['./bingo-card.component.css'],
+  animations: [
+    // animation triggers go here
+    trigger('toggleUntoggle', [
+      //states
+      state('toggled', style({
+        backgroundColor: 'white',
+        color: 'black'
+      })),
+      state('untoggled', style({
+        backgroundColor: 'black',
+        color: 'white'
+      })),
+      //transitions
+      transition('untoggled => toggled', [
+        animate('.5s')
+      ]),
+      transition('toggled => untoggled', [
+        animate('.5s')
+      ]),
+    ])
+  ]
 })
+
 export class BingoCardComponent implements OnInit {
-  conditionsList: Condition[];
   rows: Condition[][];
   multiplayer: boolean = false;
 
   constructor(
     private conditionsService: ConditionsService
-  ) {
-    this.conditionsList = this.conditionsService.conditionsList;
-  }
+  ) { }
 
   ngOnInit() {
   }
@@ -46,16 +73,7 @@ export class BingoCardComponent implements OnInit {
         var randCondition: Condition;
 
         // Pick a condition from the list
-        randCondition = this.conditionsList[Math.floor(Math.random() * this.conditionsList.length)];
-
-        if(this.multiplayer && !randCondition.multiplayer)
-        {
-          continue;
-        }
-        else if(!this.multiplayer && !randCondition.singleplayer)
-        {
-          continue;
-        }
+        randCondition = this.conditionsService.selectRandomCondition(this.multiplayer);
 
         // If the condition we picked is not already in the list, add it to the row
         if (selectedIDs.indexOf(randCondition.id) === -1)
@@ -73,17 +91,6 @@ export class BingoCardComponent implements OnInit {
 
   toggleCell(condition: Condition, event: any): void
   {
-    var elemId = event.currentTarget.id;
-
-    if (condition.toggled)
-    {
-      document.getElementById(elemId).classList.remove("toggled");
-    }
-    else
-    {
-      document.getElementById(elemId).classList.add("toggled");
-    }
-
     // Make sure to flip the toggled state for the next click
     condition.toggled = !condition.toggled;
   }
