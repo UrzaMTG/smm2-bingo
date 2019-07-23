@@ -9,7 +9,7 @@ export class ConditionsService {
 
   selectRandomCondition(multiplayer: boolean): Condition
   {
-    var randCondition: Condition = null;
+    let randCondition: Condition = null;
 
     while (randCondition === null)
     {
@@ -26,6 +26,19 @@ export class ConditionsService {
       }
     }
 
-    return randCondition;
+    return this.clone(randCondition);
+  }
+
+  private clone(baseCond: Condition): Condition {
+    let cond: Condition = new Condition();
+    
+    cond.id = baseCond.id,
+    cond.text = baseCond.text;
+    cond.description = baseCond.description;
+    cond.toggled = false; // The important part
+    cond.singleplayer = baseCond.singleplayer;
+    cond.multiplayer = baseCond.multiplayer;
+
+    return cond;
   }
 }

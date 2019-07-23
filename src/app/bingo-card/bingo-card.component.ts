@@ -13,16 +13,14 @@ import { ConditionsService } from '../conditions.service';
     trigger('toggleUntoggle', [
       //states
       state('toggled', style({
-        backgroundColor: 'white',
-        color: 'black'
+        backgroundColor: 'darkgreen'
       })),
       state('untoggled', style({
-        backgroundColor: 'black',
-        color: 'white'
+        backgroundColor: 'black'
       })),
       //transitions
       transition('untoggled <=> toggled', [
-        animate('.5s')
+        animate('300ms')
       ])
     ])
   ]
