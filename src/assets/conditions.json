@@ -32,14 +32,14 @@
     "text": "No Jump Level, Cape / Freefall",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump.",
     "singleplayer": true,
-    "multiplayer": true
+    "multiplayer": false
   },
   {
     "id": 6,
     "text": "No Jump Level, Platform Manipulation",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position.",
     "singleplayer": true,
-    "multiplayer": true
+    "multiplayer": false
   },
   {
     "id": 7,
@@ -357,13 +357,6 @@
     "multiplayer": true
   },
   {
-    "id": 52,
-    "text": "Stacked Pipes",
-    "description": "The level utilizes multiple pipes in the same space.",
-    "singleplayer": true,
-    "multiplayer": true
-  },
-  {
     "id": 53,
     "text": "Boss Stack",
     "description": "Multiple Bowsers or other bosses placed on top of each other.",
@@ -434,13 +427,6 @@
     "multiplayer": true
   },
   {
-    "id": 63,
-    "text": "Level Creator: Mom / Dad",
-    "description": "The level name or creator references Mom or Dad.",
-    "singleplayer": true,
-    "multiplayer": true
-  },
-  {
     "id": 64,
     "text": "Post-Goal Death",
     "description": "The player's path off/from the exit causes them to \"die\" after achieving victory.",
@@ -498,14 +484,14 @@
   },
   {
     "id": 72,
-    "text": "Thrown By Player To Death",
+    "text": "Thrown To Death",
     "description": "Another player picked up the player and threw them into death (pit, enemy, etc).",
     "singleplayer": false,
     "multiplayer": true
   },
   {
     "id": 73,
-    "text": "Thrown Player To Death",
+    "text": "Threw Another Player To Death",
     "description": "The player picked up another player and threw them into death (pit, enemy, etc).",
     "singleplayer": false,
     "multiplayer": true
@@ -536,6 +522,34 @@
     "text": "Switch Chaos",
     "description": "A multiplayer level with On/Off switches or P-Switches that kill other players when they are hit.",
     "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 78,
+    "text": "Multiplayer-Specific Soft Lock",
+    "description": "A level has features that only work in single player and cause the level to be unfinishable in multiplayer if any player fails a challenge (e.g. relies on respawning enemies by moving offscreen).",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 79,
+    "text": "Multiplayer-Specific Waiting",
+    "description": "A level has features that only work for a single player at a time, causing others to have to wait (rising lava in a sub area, snake blocks to cross gaps, non-pipe item respawns).",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 80,
+    "text": "Race Level",
+    "description": "A level designed such that each player has their own path to follow.",
+    "singleplayer": false,
+    "multiplayer": true
+  },
+  {
+    "id": 81,
+    "text": " Waiting",
+    "description": "Some automatic device/gizmo causes the player to have to wait at least two seconds to advance in the level.",
+    "singleplayer": true,
     "multiplayer": true
   }
 ]
