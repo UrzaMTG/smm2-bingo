@@ -23,8 +23,8 @@
 
 .bingo-spot {
   border: 1px solid white;
-  width: 18%;
-  padding-top: 100%;
+  width: 115px;
+  height: 115px;
   padding: 0px;
   margin: 0px;
   text-align: center;
@@ -32,8 +32,8 @@
 
 .completed-quest {
   border: 1px solid white;
-  width: 12%;
-  padding-top: 100%;
+  width: 85px;
+  height: 85px;
   padding: 0px;
   margin: 0px;
   text-align: center;
