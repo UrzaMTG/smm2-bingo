@@ -14,11 +14,11 @@ import { ConditionsService } from '../conditions.service';
       //transitions
       transition(':enter', [
         style({ opacity: 0 }),
-        animate('0.25s', style({ opacity: 1 }))
+        animate('750ms', style({ opacity: 1 }))
       ]),
       transition(':leave', [
         style({ opacity: 1 }),
-        animate('0.25s', style({ opacity: 0 }))
+        animate('200ms', style({ opacity: 0 }))
       ]),
     ]),
   ]
