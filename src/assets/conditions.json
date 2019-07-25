@@ -29,21 +29,21 @@
   },
   {
     "id": 5,
-    "text": "No Jump Level, Cape / Freefall",
+    "text": "One Jump Level",
     "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves staying off of the ground after an initial jump.",
     "singleplayer": true,
     "multiplayer": false
   },
   {
     "id": 6,
-    "text": "No Jump Level, Platform Manipulation",
-    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all and using moving platforms to change Mario's position.",
+    "text": "No Jump Level",
+    "description": "A level with the \"Reach the goal without landing after touching the ground\" clear condition, where the majority of the level involves not jumping at all",
     "singleplayer": true,
     "multiplayer": false
   },
   {
     "id": 7,
-    "text": "Boo Ring in Question Block",
+    "text": "Boo Ring in ? Block",
     "description": "A block (question, note, brick, etc.) that, when hit, generates a boo ring.",
     "singleplayer": true,
     "multiplayer": true
@@ -212,7 +212,7 @@
   {
     "id": 31,
     "text": "Instant Non-Thwomp Death",
-    "description": "Mario will be killed by a hazard other than a thwomp at the start of the level unless he moves out of the way as soon as the level starts.",
+    "description": "The player will be killed by a hazard other than a thwomp at the start of the level unless they move out of the way immediately.",
     "singleplayer": true,
     "multiplayer": true
   },
@@ -221,7 +221,7 @@
     "text": "Too Many 1-Ups",
     "description": "The level gives the player 3 or more 1-ups in a single life.",
     "singleplayer": true,
-    "multiplayer": true
+    "multiplayer": false
   },
   {
     "id": 33,
@@ -386,7 +386,7 @@
   },
   {
     "id": 57,
-    "text": "Useless Keys",
+    "text": "Useless Key",
     "description": "The player is able to skip key doors and end the level with at least one key in their possession.",
     "singleplayer": true,
     "multiplayer": true
@@ -464,7 +464,7 @@
   {
     "id": 69,
     "text": "Repeat Level",
-    "description": "The same level appears more than once in the same run.",
+    "description": "The same level appears more than once in the same endless run.",
     "singleplayer": true,
     "multiplayer": false
   },
@@ -547,7 +547,7 @@
   },
   {
     "id": 81,
-    "text": " Waiting",
+    "text": "Waiting",
     "description": "Some automatic device/gizmo causes the player to have to wait at least two seconds to advance in the level.",
     "singleplayer": true,
     "multiplayer": true
